@@ -1,27 +1,41 @@
-/*
-This is your site JavaScript code - you can add interactivity and carry out processing
-- Initially the JS writes a message to the console, and moves a button you can add from the README
-*/
+const btn= document.querySelector("#btn");
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
 
-/* 
-Make the "Click me!" button move when the visitor clicks it:
-- First add the button to the page by following the "Next steps" in the README
-*/
-const btn = document.querySelector("button"); // Get the button from the page
-// Detect clicks on the button
-if (btn) {
-  btn.onclick = function() {
-    // The JS works in conjunction with the 'dipped' code in style.css
-    btn.classList.toggle("dipped");
-  };
+btn.addEventListener("click", calculate);
+
+function calculate(e){
+e.preventDefault();
+    let people=document.querySelector("#people").value;
+    let plane= document.querySelector("#plane").value;
+    let train= document.querySelector("#train").value;
+    let bus= document.querySelector("#bus").value;
+    let taxi= document.querySelector("#taxi").value;
+    let hotel= document.querySelector("#hotel").value;
+    let food= document.querySelector("#food").value;
+    let car= document.querySelector("#car").value;
+    let fun= document.querySelector("#fun").value;
+
+
+if ( people<=0  || people ===" "|| plane<0 || train <0 || bus<0 || taxi<0 || hotel<0 || food<0|| car<0 ||fun<0){
+    Swal.fire({
+        icon: 'error',
+        title: 'Faltan datos',
+        text: 'Revisa el número de viajeros y las cantidades',
+        confirmButtonColor: '#f27474',
+      })
+return false;
 }
 
-// This is a single line JS comment
-/*
-This is a comment that can span multiple lines 
-- use comments to make your own notes!
-*/
+
+let totalSum= + plane + + train + + bus + + taxi + + hotel + + food + + car + + fun;
+totalSum=totalSum.toFixed(2);
+
+document.querySelector("#total").textContent=totalSum;
+
+let result= totalSum / people;
+result= result.toFixed(2);
+
+document.querySelector("#totalPerPerson").textContent= result;
+
+
+}
