@@ -21,7 +21,7 @@ e.preventDefault();
     let fun= document.querySelector("#fun").value;
 
 
-if ( people<=0  || people ===" "|| plane<0 || train <0 || bus<0 || taxi<0 || hotel<0 || food<0|| car<0 ||fun<0){
+if ( people<=0  || people ===" "|| plane<0 || train <0 || bus<0 || taxi<0 || hotel<0 || food<0|| car<0 ||fun<0 || || isNaN(people) || isNaN(plane) || isNaN(train) || isNaN(bus) || isNaN(taxi) || isNaN(hotel) || isNaN(food) || isNaN(car) || isNaN(fun){
     Swal.fire({
         icon: 'error',
         title: 'Faltan datos',
