@@ -1,3 +1,8 @@
+gsap.from("#header", {y:-300, delay:0.2, duration:3, opacity:0.5, ease:"power4.out"})
+gsap.from("#header", {y:-300, delay:0.2, duration:3, opacity:0.5, ease:"power4.out"})
+gsap.from("#header", {y:-300, delay:0.2, duration:3, opacity:0.5, ease:"power4.out"})
+
+
 const btn= document.querySelector("#btn");
 
 
