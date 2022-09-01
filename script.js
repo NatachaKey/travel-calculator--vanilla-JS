@@ -1,8 +1,9 @@
-gsap.from(".container", {y:-300, delay:0.2, duration:3, opacity:0, ease:"power4.out"})
+gsap.from(".container", {y:100, delay:0.2, duration:3, opacity:0, ease:"power4.out"})
 gsap.from("h1", {x:-300, delay:0.4, duration:3, opacity:0, ease:"power4.out"})
 gsap.from("h3", {x:-300, delay:1.5, duration:3, opacity:0, ease:"power4.out"})
 gsap.from("span", {x:300, delay:2.5, duration:3, opacity:0, ease:"power4.out"})
-
+gsap.from("#btn", {y:300, delay:3, duration:3, opacity:0, ease:"power4.out"})
+gsap.from(".block", {y:300, delay:3, duration:3, opacity:0, ease:"power4.out"})
 
 const btn= document.querySelector("#btn");
 
