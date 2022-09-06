@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
+  background-color: #212121;
 }
 
 h1, h3, input{
