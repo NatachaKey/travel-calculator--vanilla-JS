@@ -1,56 +1,51 @@
 body{
-    background-image: url("https://cdn.glitch.global/e8170591-f70a-46ac-8f68-2c4a2b3fcfc0/wall.jpg?v=1657798477948");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-  background-color: #212121;
+     background-image: url("https://cdn.glitch.global/e8170591-f70a-46ac-8f68-2c4a2b3fcfc0/wall.jpg?v=1657798477948");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     min-height: 100vh;
+     background-color: #212121;
 }
-
-h1, h3, input{
-    font-family: 'Poppins', sans-serif;
-    opacity: 2;
+ h1, h3, input{
+     font-family: 'Poppins', sans-serif;
+     opacity: 2;
 }
-#howManyPeople{
-    color: #51d679;
-    font-weight: bolder;
-   font-size: 20px;
+ #howManyPeople{
+     color: #51d679;
+     font-weight: bolder;
+     font-size: 20px;
 }
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: aliceblue;
-    width:600px;
-    opacity: .8;
+ .container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background-color: aliceblue;
+     width:600px;
+     opacity: .8;
 }
-
-#btn{
-    margin: 30px;
-    width: 100px;
-    padding: 10px;
-    border: none;
-    font-weight: bolder;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    background-color: rgb(181, 243, 243);
-  color:black;
+ #btn{
+     margin: 30px;
+     width: 100px;
+     padding: 10px;
+     border: none;
+     font-weight: bolder;
+     font-family: 'Poppins', sans-serif;
+     font-size: 15px;
+     background-color: rgb(181, 243, 243);
+     color:black;
 }
-
-.containerTwo{
-    display: flex;
-    justify-content: flex-start;
-    
+ .containerTwo{
+     display: flex;
+     justify-content: flex-start;
 }
-.block{
-margin: 20px;
-background-color: antiquewhite;
-padding: 10px;
-font-family: 'Poppins', sans-serif;
-border-radius: 10px;
-width: 200px;
-  text-align:center;
+ .block{
+     margin: 20px;
+     background-color: antiquewhite;
+     padding: 10px;
+     font-family: 'Poppins', sans-serif;
+     border-radius: 10px;
+     width: 200px;
+     text-align:center;
 }

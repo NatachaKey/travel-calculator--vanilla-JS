@@ -1,87 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel calculator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-<div class="container">
- <h1>Viaje: all inclusive </h1>
-
- <h3 id="howManyPeople">Cuántas personas</h3>
-<span>👣
-    <input type="text" id="people" placeholder="Cuántas personas" >
-</span>
-
-<h3>Avión</h3>
-<span>€ 
-    <input type="text" id="plane" placeholder="Avión">
-</span>
-
-<h3>Tren</h3>
-<span>€ 
-    <input type="text" id="train" placeholder="Tren">
-</span>
-
-<h3>Autobus</h3>
-<span>€ 
-    <input type="text" id="bus" placeholder="Autobus">
-</span>
-
-<h3>Coche</h3>
-<span>€ 
-    <input type="text" id="car" placeholder="Car">
-</span>
-
-<h3>Taxi</h3>
-<span>€ 
-    <input type="text" id="taxi" placeholder="Taxi">
-</span>
-
-<h3>Hotel</h3>
-<span>€ 
-    <input type="text" id="hotel" placeholder="Hotel">
-</span>
-
-<h3>Comida</h3>
-<span>€
-    <input type="text" id="food" placeholder="Comida">
-</span>
-
-<h3>Diversión</h3>
-<span>€ 
-    <input type="text" id="fun" placeholder="Diversión">
-</span>
-
-
-<button id="btn">Calcular</button>
-
-<div class="containerTwo">
-<div class="block">
-    <p>Total:</p>
-    <span id="total"> </span>
-    <span>€ </span>
-</div>
-
-<div class="block">
-    <p>Total por persona:</p>
-    <span id="totalPerPerson"> </span>
-    <span>€ por persona</span>
-</div>
-</div>
-</div>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="script.js"></script>
-</body>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Travel calculator</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Viaje: all inclusive </h1>
+         <h3 id="howManyPeople">Cuántas personas</h3>
+         <span>👣
+         <input type="text" id="people" placeholder="Cuántas personas" >
+         </span>
+         <h3>Avión</h3>
+         <span>€ 
+         <input type="text" id="plane" placeholder="Avión">
+         </span>
+         <h3>Tren</h3>
+         <span>€ 
+         <input type="text" id="train" placeholder="Tren">
+         </span>
+         <h3>Autobus</h3>
+         <span>€ 
+         <input type="text" id="bus" placeholder="Autobus">
+         </span>
+         <h3>Coche</h3>
+         <span>€ 
+         <input type="text" id="car" placeholder="Car">
+         </span>
+         <h3>Taxi</h3>
+         <span>€ 
+         <input type="text" id="taxi" placeholder="Taxi">
+         </span>
+         <h3>Hotel</h3>
+         <span>€ 
+         <input type="text" id="hotel" placeholder="Hotel">
+         </span>
+         <h3>Comida</h3>
+         <span>€
+         <input type="text" id="food" placeholder="Comida">
+         </span>
+         <h3>Diversión</h3>
+         <span>€ 
+         <input type="text" id="fun" placeholder="Diversión">
+         </span>
+         <button id="btn">Calcular</button>
+         <div class="containerTwo">
+            <div class="block">
+               <p>Total:</p>
+               <span id="total"> </span>
+               <span>€ </span>
+            </div>
+            <div class="block">
+               <p>Total por persona:</p>
+               <span id="totalPerPerson"> </span>
+               <span>€ por persona</span>
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="script.js"></script>
+   </body>
 </html>
