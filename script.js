@@ -26,8 +26,8 @@ e.preventDefault();
 if (people<=0  || people ===" "|| plane<0 || train <0 || bus<0 || taxi<0 || hotel<0 || food<0|| car<0 ||fun<0 || isNaN(people) || isNaN(plane) || isNaN(train) || isNaN(bus) || isNaN(taxi) || isNaN(hotel) || isNaN(food) || isNaN(car) || isNaN(fun))  {
     Swal.fire({
         icon: 'error',
-        title: 'Faltan datos',
-        text: 'Revisa el número de viajeros y las cantidades',
+        title: (document.querySelector(".spanish").classList.contains("selected")) ? 'Faltan datos' : "Missing data",
+        text: (document.querySelector(".spanish").classList.contains("selected")) ? 'Revisa el número de viajeros y las cantidades' : "Check the number of travelers and quantities" ,
         confirmButtonColor: '#f27474',
       })
 return false;

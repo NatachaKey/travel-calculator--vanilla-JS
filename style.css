@@ -1,17 +1,27 @@
+:root
+{
+     --body-background: #212121;
+     --how-many-pople: #51d679;
+     --container-bg : aliceblue;
+     --btn-bg: #b5f3f3;
+     --btn-color: black;
+     --block-bg: antiquewhite;
+}
+
 body{
      background-image: url("https://cdn.glitch.global/e8170591-f70a-46ac-8f68-2c4a2b3fcfc0/wall.jpg?v=1657798477948");
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
      min-height: 100vh;
-     background-color: #212121;
+     background-color: var(--body-background);
 }
  h1, h3, input{
      font-family: 'Poppins', sans-serif;
      opacity: 2;
 }
  #howManyPeople{
-     color: #51d679;
+     color: var(--how-many-pople);
      font-weight: bolder;
      font-size: 20px;
 }
@@ -21,7 +31,7 @@ body{
      justify-content: center;
      align-items: center;
      min-height: 100vh;
-     background-color: aliceblue;
+     background-color: var(--container-bg);
      width:600px;
      opacity: .8;
 }
@@ -33,8 +43,8 @@ body{
      font-weight: bolder;
      font-family: 'Poppins', sans-serif;
      font-size: 15px;
-     background-color: rgb(181, 243, 243);
-     color:black;
+     background-color: var(--btn-bg);
+     color:var(--btn-color);
 }
  .containerTwo{
      display: flex;
@@ -42,10 +52,48 @@ body{
 }
  .block{
      margin: 20px;
-     background-color: antiquewhite;
+     background-color: var(--block-bg);
      padding: 10px;
      font-family: 'Poppins', sans-serif;
      border-radius: 10px;
      width: 200px;
      text-align:center;
+}
+
+/*Translation toggler styling start*/
+.toggle-container
+{
+     position: absolute;
+     top: 3%;
+     right: 3%;
+     width: auto;
+     height: auto;
+}
+
+.toggle-container .language-switch
+{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 0.3rem;
+     flex-direction: row; 
+     background-color: var(--body-background);
+     border-radius: 20px;
+     color: var(--btn-bg);
+     font-weight: bolder;
+}
+
+.toggle-container .language-switch > div
+{
+     text-transform: uppercase;
+     padding: 0.1rem 0.3rem;
+     cursor: pointer;
+}
+
+.selected
+{
+     background-color: var(--how-many-pople);
+     color: var(--body-background);
+     border-radius: inherit;
+     transition: 0.2s;
 }
